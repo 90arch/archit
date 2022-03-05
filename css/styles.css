@@ -1,4 +1,4 @@
-/*Typography*/
+/* Typography */
 html {
   /*62.5% of 16px =10px*/
   font-size: 62.5%;
@@ -49,7 +49,7 @@ p {
   }
 }
 
-/*Links*/
+/* Links */
 a {
   text-decoration: none;
 }
@@ -104,4 +104,46 @@ a {
   .badge-small {
     font-size: 1.2rem;
   }
+}
+
+/* Lists */
+.list {
+  list-style: none;
+  color: var(--color-headings);
+  padding-left: 0;
+}
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -251,7 +251,7 @@ a {
 }
 .card__header,
 .card__body {
-  paddind: 2rem 3rem;
+  padding: 2rem 3rem;
 }
 
 .card--primary .card__header {
@@ -319,4 +319,18 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+}
+
+/* Media Objects */
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__image {
+  margin-top: 1rem;
 }
